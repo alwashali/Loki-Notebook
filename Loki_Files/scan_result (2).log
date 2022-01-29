@@ -1,0 +1,22 @@
+20211013T21:59:33Z,AD,NOTICE,Init,Starting Loki Scan VERSION: 0.44.2 SYSTEM: AD TIME: 20211013T21:59:33Z PLATFORM: 10 10.0.17763 SP0 Multiprocessor Free PROC: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel ARCH: 32bit WindowsPE
+20211013T21:59:34Z,AD,NOTICE,PESieve,PE-Sieve successfully initialized BINARY: \\share\loki\tools\pe-sieve64.exe SOURCE: https://github.com/hasherezade/pe-sieve
+20211013T21:59:34Z,AD,INFO,Init,File Name Characteristics initialized with 3199 regex patterns
+20211013T21:59:34Z,AD,INFO,Init,C2 server indicators initialized with 1590 elements
+20211013T21:59:39Z,AD,INFO,Init,Malicious MD5 Hashes initialized with 19181 hashes
+20211013T21:59:39Z,AD,INFO,Init,Malicious SHA1 Hashes initialized with 7204 hashes
+20211013T21:59:39Z,AD,INFO,Init,Malicious SHA256 Hashes initialized with 23152 hashes
+20211013T21:59:39Z,AD,INFO,Init,False Positive Hashes initialized with 30 hashes
+20211013T21:59:39Z,AD,INFO,Init,Processing YARA rules folder \\share\loki\signature-base\yara
+20211013T22:00:51Z,AD,ERROR,Init,Error reading signature file \\share\loki\signature-base\yara\backdoors.yar ERROR: [Errno 22] Invalid argument
+20211013T22:01:21Z,AD,ERROR,Init,Error reading signature file \\share\loki\signature-base\yara\gen_cn_webshells.yar ERROR: [Errno 22] Invalid argument
+20211013T22:01:39Z,AD,ERROR,Init,Error reading signature file \\share\loki\signature-base\yara\gen_webshells.yar ERROR: [Errno 22] Invalid argument: '\\\\share\\loki\\signature-base\\yara\\gen_webshells.yar'
+20211013T22:01:41Z,AD,ERROR,Init,Error reading signature file \\share\loki\signature-base\yara\malware.yar ERROR: [Errno 22] Invalid argument: '\\\\share\\loki\\signature-base\\yara\\malware.yar'
+20211013T22:02:39Z,AD,INFO,Init,Initializing all YARA rules at once (composed string of all rule files)
+20211013T22:02:39Z,AD,INFO,Init,Initialized 776 Yara rules
+20211013T22:02:39Z,AD,INFO,Init,Current user has admin rights - very good
+20211013T22:02:40Z,AD,INFO,Init,Setting LOKI process with PID: 1968 to priority IDLE
+20211013T22:02:40Z,AD,INFO,FileScan,Scanning Path C:\ ...  
+20211013T22:51:36Z,AD,NOTICE,Results,Results: 0 alerts, 0 warnings, 2 notices
+20211013T22:51:36Z,AD,RESULT,Results,SYSTEM SEEMS TO BE CLEAN.
+20211013T22:51:36Z,AD,INFO,Results,Please report false positives via https://github.com/Neo23x0/signature-base
+20211013T22:51:36Z,AD,NOTICE,Results,Finished LOKI Scan SYSTEM: AD TIME: 20211013T22:51:36Z

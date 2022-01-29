@@ -1,0 +1,23 @@
+20211013T22:11:03Z,DS-SER1,NOTICE,Init,Starting Loki Scan VERSION: 0.44.2 SYSTEM: DS-SER1 TIME: 20211013T22:11:03Z PLATFORM: 10 10.0.14393 SP0 Multiprocessor Free PROC: Intel64 Family 6 Model 85 Stepping 4, GenuineIntel ARCH: 32bit WindowsPE
+20211013T22:11:03Z,DS-SER1,NOTICE,PESieve,PE-Sieve successfully initialized BINARY: \\share\loki\tools\pe-sieve64.exe SOURCE: https://github.com/hasherezade/pe-sieve
+20211013T22:11:03Z,DS-SER1,INFO,Init,File Name Characteristics initialized with 3199 regex patterns
+20211013T22:11:03Z,DS-SER1,INFO,Init,C2 server indicators initialized with 1590 elements
+20211013T22:11:04Z,DS-SER1,INFO,Init,Malicious MD5 Hashes initialized with 19181 hashes
+20211013T22:11:04Z,DS-SER1,INFO,Init,Malicious SHA1 Hashes initialized with 7204 hashes
+20211013T22:11:04Z,DS-SER1,INFO,Init,Malicious SHA256 Hashes initialized with 23152 hashes
+20211013T22:11:04Z,DS-SER1,INFO,Init,False Positive Hashes initialized with 30 hashes
+20211013T22:11:04Z,DS-SER1,INFO,Init,Processing YARA rules folder \\share\loki\signature-base\yara
+20211013T22:11:11Z,DS-SER1,INFO,Init,Initializing all YARA rules at once (composed string of all rule files)
+20211013T22:11:12Z,DS-SER1,INFO,Init,Initialized 780 Yara rules
+20211013T22:11:12Z,DS-SER1,INFO,Init,Current user has admin rights - very good
+20211013T22:11:12Z,DS-SER1,INFO,Init,Setting LOKI process with PID: 8756 to priority IDLE
+20211013T22:11:12Z,DS-SER1,INFO,FileScan,Scanning Path C:\ ...  
+20211013T22:16:41Z,DS-SER1,WARNING,FileScan,FILE: C:\Program Files\WinPcap\Uninstall.exe SCORE: 70 TYPE: EXE SIZE: 121106 FIRST_BYTES: 4d5a90000300000004000000ffff0000b8000000 / <filter object at 0x02427988> MD5: c0f94449e113fa3f7eb420c64108b58b SHA1: 2fc0779b5c0d560b4a085e452898b64775c9c3a6 SHA256: 348e87f7ecdb9e2d600370029a95a31dd3172d29454fcd4afaee8199285b0ede CREATED: Tue Oct 23 10:43:10 2018 MODIFIED: Tue Oct 23 10:43:10 2018 ACCESSED: Tue Mar 30 17:53:54 2021 REASON_1: Yara Rule MATCH: S149_WinPcap SUBSCORE: 70 DESCRIPTION: WinPcap REF: - AUTHOR: - MATCHES: Str1: nsis.sf.net Str2: WinPcap
+20211013T22:19:07Z,DS-SER1,WARNING,FileScan,FILE: C:\Program Files (x86)\WinSCP\PuTTY\pageant.exe SCORE: 70 TYPE: EXE SIZE: 353496 FIRST_BYTES: 4d5a780001000000040000000000000000000000 / <filter object at 0x02427BE0> MD5: 3f404bccf6c1eeef51887f4116c2ab42 SHA1: c4d6fd361b12d852ba96498d8190ef20b92b33a8 SHA256: e9067bd344f49f37eaf33cb94f538477b4144ce658143265eb15e0b1b719c04d CREATED: Mon Apr  5 12:28:51 2021 MODIFIED: Mon Jul 19 16:24:22 2021 ACCESSED: Sat Sep 18 11:12:58 2021 REASON_1: Yara Rule MATCH: S179_putty SUBSCORE: 70 DESCRIPTION: Putty REF: - AUTHOR: - MATCHES: Str1: Simon Tatham Str2: PuTTY
+20211013T22:19:07Z,DS-SER1,WARNING,FileScan,FILE: C:\Program Files (x86)\WinSCP\PuTTY\puttygen.exe SCORE: 70 TYPE: EXE SIZE: 428760 FIRST_BYTES: 4d5a780001000000040000000000000000000000 / <filter object at 0x024272F8> MD5: 4a63fd7adae8b525224ab2c506c9a6ea SHA1: d040fc0f5f40d4cb7f89696990089f4adb6eadf6 SHA256: b82960d769d218c4717da77b57d1bc1626b7835e1e4e857e94151061d1acc9e9 CREATED: Mon Apr  5 12:28:51 2021 MODIFIED: Mon Jul 19 16:24:22 2021 ACCESSED: Sat Sep 18 11:12:58 2021 REASON_1: Yara Rule MATCH: S179_putty SUBSCORE: 70 DESCRIPTION: Putty REF: - AUTHOR: - MATCHES: Str1: Simon Tatham Str2: PuTTY
+20211013T22:20:58Z,DS-SER1,ALERT,FileScan,FILE: C:\Users\sersea\.m2\repository\org\apache\struts\struts-core\1.3.8\struts-core-1.3.8.jar SCORE: 100 TYPE: ZIP SIZE: 328896 FIRST_BYTES: 504b03040a0000000000d55b6336000000000000 / <filter object at 0x02427A48> MD5: 868de456b4d4331d6dcc4e8d3bee884e SHA1: 66178d4a9279ebb1cd1eb79c10dc204b4199f061 SHA256: a7881710517dd6a50fa81c04d494e1493ad326bcc1adf2eb9493e5eb9ca9e077 CREATED: Tue Apr  6 15:32:43 2021 MODIFIED: Tue Apr  6 15:32:43 2021 ACCESSED: Tue Apr  6 15:32:43 2021 REASON_1: Malware Hash TYPE: SHA1 HASH: 66178d4a9279ebb1cd1eb79c10dc204b4199f061 SUBSCORE: 100 DESC: DCSO Vuln List https://goo.gl/7jGkpV struts-core-1.3.8.jar vulnerable Struts Version See CVE-2017-5638 | CVE-2017-9791 | CVE-2017-9805
+20211013T23:11:16Z,DS-SER1,NOTICE,Results,Results: 1 alerts, 3 warnings, 2 notices
+20211013T23:11:16Z,DS-SER1,RESULT,Results,Indicators detected!
+20211013T23:11:16Z,DS-SER1,RESULT,Results,Loki recommends checking the elements on virustotal.com or Google and triage with a professional tool like THOR https://nextron-systems.com/thor in corporate networks.
+20211013T23:11:16Z,DS-SER1,INFO,Results,Please report false positives via https://github.com/Neo23x0/signature-base
+20211013T23:11:16Z,DS-SER1,NOTICE,Results,Finished LOKI Scan SYSTEM: DS-SER1 TIME: 20211013T23:11:16Z

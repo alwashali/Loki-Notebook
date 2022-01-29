@@ -1,0 +1,24 @@
+20211013T21:11:45Z,Server1,NOTICE,Init,Starting Loki Scan VERSION: 0.44.2 SYSTEM: Server1 TIME: 20211013T21:11:45Z PLATFORM: 10 10.0.14393 SP0 Multiprocessor Free PROC: Intel64 Family 15 Model 6 Stepping 1, GenuineIntel ARCH: 32bit WindowsPE
+20211013T21:11:45Z,Server1,NOTICE,PESieve,PE-Sieve successfully initialized BINARY: \\share\loki\tools\pe-sieve64.exe SOURCE: https://github.com/hasherezade/pe-sieve
+20211013T21:11:45Z,Server1,INFO,Init,File Name Characteristics initialized with 3199 regex patterns
+20211013T21:11:45Z,Server1,INFO,Init,C2 server indicators initialized with 1590 elements
+20211013T21:11:46Z,Server1,INFO,Init,Malicious MD5 Hashes initialized with 19181 hashes
+20211013T21:11:46Z,Server1,INFO,Init,Malicious SHA1 Hashes initialized with 7204 hashes
+20211013T21:11:46Z,Server1,INFO,Init,Malicious SHA256 Hashes initialized with 23152 hashes
+20211013T21:11:46Z,Server1,INFO,Init,False Positive Hashes initialized with 30 hashes
+20211013T21:11:46Z,Server1,INFO,Init,Processing YARA rules folder \\share\loki\signature-base\yara
+20211013T21:11:52Z,Server1,INFO,Init,Initializing all YARA rules at once (composed string of all rule files)
+20211013T21:11:53Z,Server1,INFO,Init,Initialized 780 Yara rules
+20211013T21:11:53Z,Server1,INFO,Init,Current user has admin rights - very good
+20211013T21:11:53Z,Server1,INFO,Init,Setting LOKI process with PID: 4004 to priority IDLE
+20211013T21:11:53Z,Server1,INFO,FileScan,Scanning Path C:\ ...  
+20211013T21:27:55Z,Server1,WARNING,FileScan,FILE: C:\SandBoxDeployementScripts\PSTools\PsExec.exe SCORE: 70 TYPE: EXE SIZE: 834936 FIRST_BYTES: 4d5a90000300000004000000ffff0000b8000000 / <filter object at 0x03277AF0> MD5: c590a84b8c72cf18f35ae166f815c9df SHA1: b97761358338e640a31eef5e5c5773b633890914 SHA256: 57492d33b7c0755bb411b22d2dfdfdf088cbbfcd010e30dd8d425d5fe66adff4 CREATED: Tue May 25 16:40:08 2021 MODIFIED: Tue May 25 16:40:08 2021 ACCESSED: Tue May 25 16:40:08 2021 REASON_1: Yara Rule MATCH: psexec_generic SUBSCORE: 70 DESCRIPTION: not set REF: Sysinternals PsExec Generic AUTHOR: @patrickrolsen MATCHES: Str1: PsInfSvc Str2: %s -install Str3: %s -remove Str4: PsExec Str5: psexec
+20211013T21:27:55Z,Server1,WARNING,FileScan,FILE: C:\SandBoxDeployementScripts\PSTools\PsExec64.exe SCORE: 70 TYPE: EXE SIZE: 1078672 FIRST_BYTES: 4d5a90000300000004000000ffff0000b8000000 / <filter object at 0x03277A00> MD5: 18126be163eb7df2194bb902c359ba8e SHA1: 6c79d9ca8bf0a3b5f04d317165f48d4eedd04d40 SHA256: a9affdcdb398d437e2e1cd9bc1ccf2d101d79fc6d87e95e960e50847a141faa4 CREATED: Tue May 25 16:40:08 2021 MODIFIED: Tue May 25 16:40:08 2021 ACCESSED: Tue May 25 16:40:08 2021 REASON_1: Yara Rule MATCH: psexec_generic SUBSCORE: 70 DESCRIPTION: not set REF: Sysinternals PsExec Generic AUTHOR: @patrickrolsen MATCHES: Str1: PsInfSvc Str2: %s -install Str3: %s -remove Str4: PsExec Str5: psexec
+20211013T21:28:25Z,Server1,INFO,FileScan,Scanning memory dump file iexplore.exe.8996.dmp
+20211013T21:32:55Z,Server1,WARNING,FileScan,FILE: C:\Users\admin\Downloads\PSTools\PsExec.exe SCORE: 70 TYPE: EXE SIZE: 834936 FIRST_BYTES: 4d5a90000300000004000000ffff0000b8000000 / <filter object at 0x03277A30> MD5: 6b609bca901543254645bff916fa408a SHA1: 281686528a04dc9d648a78c5b209d5ff6008c22d SHA256: a6dedd35ad745641c52d6a9f8da1fb09101d152f01b4b0e85a64d21c2a0845ee CREATED: Tue Mar 23 18:54:38 2021 MODIFIED: Tue Mar 23 18:54:38 2021 ACCESSED: Tue Mar 23 18:54:38 2021 REASON_1: Yara Rule MATCH: psexec_generic SUBSCORE: 70 DESCRIPTION: not set REF: Sysinternals PsExec Generic AUTHOR: @patrickrolsen MATCHES: Str1: PsInfSvc Str2: %s -install Str3: %s -remove Str4: PsExec Str5: psexec
+20211013T21:32:55Z,Server1,WARNING,FileScan,FILE: C:\Users\admin\Downloads\PSTools\PsExec64.exe SCORE: 70 TYPE: EXE SIZE: 1078136 FIRST_BYTES: 4d5a90000300000004000000ffff0000b8000000 / <filter object at 0x03277970> MD5: 6f47970bd915ab3d24f0cf5a24223718 SHA1: 791ba6733e718d5289b5e7e13d13efb93ec5033f SHA256: 2c5817a56e387283e450cf2abeb4c3e97bd53de135219325c104058c533f6b60 CREATED: Tue Mar 23 18:54:38 2021 MODIFIED: Tue Mar 23 18:54:38 2021 ACCESSED: Tue Mar 23 18:54:38 2021 REASON_1: Yara Rule MATCH: psexec_generic SUBSCORE: 70 DESCRIPTION: not set REF: Sysinternals PsExec Generic AUTHOR: @patrickrolsen MATCHES: Str1: PsInfSvc Str2: %s -install Str3: %s -remove Str4: PsExec Str5: psexec
+20211013T22:32:38Z,Server1,NOTICE,Results,Results: 0 alerts, 4 warnings, 2 notices
+20211013T22:32:38Z,Server1,RESULT,Results,Suspicious objects detected!
+20211013T22:32:38Z,Server1,RESULT,Results,Loki recommends a deeper analysis of the suspicious objects.
+20211013T22:32:38Z,Server1,INFO,Results,Please report false positives via https://github.com/Neo23x0/signature-base
+20211013T22:32:38Z,Server1,NOTICE,Results,Finished LOKI Scan SYSTEM: Server1 TIME: 20211013T22:32:38Z
